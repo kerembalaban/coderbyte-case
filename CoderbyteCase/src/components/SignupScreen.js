@@ -40,18 +40,21 @@ const SignupForm = ({navigation}) => {
         style={styles.input}
         placeholder="First Name"
         value={name}
+        placeholderTextColor="gray"
         onChangeText={setNameLocal}
       />
       <TextInput
         style={styles.input}
         placeholder="Email*"
         value={email}
+        placeholderTextColor="gray"
         onChangeText={setEmailLocal}
       />
       <TextInput
         style={styles.input}
         placeholder="Password*"
         value={password}
+        placeholderTextColor="gray"
         onChangeText={setPasswordLocal}
         secureTextEntry
       />
@@ -59,6 +62,7 @@ const SignupForm = ({navigation}) => {
         style={styles.input}
         placeholder="https://"
         value={website}
+        placeholderTextColor="gray"
         onChangeText={setWebsiteLocal}
       />
       <Button title="Submit" onPress={handleSignup} />
