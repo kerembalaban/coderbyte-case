@@ -17,18 +17,16 @@ import {UserState} from '../types/userTypes';
 import AvatarPicker from '../components/AvatarPicker';
 import {isValidEmail, isValidPassword, isValidUrl} from '../utils/helpers';
 import {colors} from '../constants/colors';
+import {useNavigation} from '@react-navigation/native';
 
 type SignupScreenNavigationProp = StackNavigationProp<
   RootStackParamList,
   'Signup'
 >;
 
-type Props = {
-  navigation: SignupScreenNavigationProp;
-};
-
-const SignupScreen = ({navigation}: Props) => {
+const SignupScreen = () => {
   const {userState, setUserState} = useContext(AuthContext);
+  const navigation = useNavigation<SignupScreenNavigationProp>();
 
   const handleSignup = () => {
     if (!isValidEmail(userState.email)) {
