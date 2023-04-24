@@ -1,6 +1,5 @@
 This is a simple React Native application that demonstrates how to create a user registration form with the following fields: first name, email address, password, and personal website. The user can also take a profile picture to be displayed on the confirmation page.
 
-
 #Installation
 
 Clone the repository to your local machine:
@@ -23,3 +22,5 @@ npx android
 React Native
 React Navigation
 React Native Image Picker
+Typescript
+ContextApi
